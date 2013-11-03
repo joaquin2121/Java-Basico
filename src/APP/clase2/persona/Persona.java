@@ -14,18 +14,18 @@ public class Persona {
     }
 
     public Persona() {
-    }// constructir
+    }// constructor
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombreApellidos(String nombre, String apellido) {
+    public void setNombreApellidos(String nombre, String apellidos) {
         this.nombre = nombre;
         this.apellidos = apellidos;
     }
 
-    public void setNombreCompleto(String nombre, String apellido) {
+    public void setNombreCompleto(String nombre, String apellidos) {
     }
 
     public void printNombreCompleto() {

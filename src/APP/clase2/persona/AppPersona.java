@@ -16,7 +16,9 @@ public class AppPersona {
         luis.setApellidos("lora");
         luis.setEdad(30);
 
-        luis.setNombreCompleto("d", "d");
-
+        Persona carlos = new Persona();
+        carlos.setNombre("luis");
+        carlos.setApellidos("lora");
+        carlos.printNombreCompleto();
     }
 }
