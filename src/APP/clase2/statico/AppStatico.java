@@ -11,7 +11,7 @@ public class AppStatico {
         double euro = Statico.dolaraEuro(10d);
         System.out.println(euro);
         System.out.println(Statico.contador);
-   }
+    }
 
     public static void runAtributoEstatico() {
         Statico estaUn = new Statico();

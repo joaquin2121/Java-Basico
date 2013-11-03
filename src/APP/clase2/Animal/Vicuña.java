@@ -8,22 +8,20 @@ package APP.clase2.Animal;
  *
  * @author alumno
  */
-public class Vicuña extends Animal{
-     public Vicuña(String nombre, int edad){
-    this.setNomnre(nombre);
-    this.setEdad(edad);
+public class Vicuña extends Animal {
+
+    public Vicuña(String nombre, int edad) {
+        this.setNomnre(nombre);
+        this.setEdad(edad);
     }
-    
-    
 
     @Override
     public void hacerRuido() {
-       System.out.println("vivivivivi");
+        System.out.println("vivivivivi");
     }
 
     @Override
     public void comer() {
-       System.out.println("pasto");
+        System.out.println("pasto");
     }
-    
 }

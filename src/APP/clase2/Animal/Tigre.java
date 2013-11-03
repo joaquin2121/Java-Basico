@@ -8,17 +8,18 @@ package APP.clase2.Animal;
  *
  * @author alumno
  */
-public class Tigre extends Animal{
-    
-    public Tigre(String nombre, int edad){
-    this.setNomnre(nombre);
-    this.setEdad(edad);
+public class Tigre extends Animal {
+
+    public Tigre(String nombre, int edad) {
+        this.setNomnre(nombre);
+        this.setEdad(edad);
     }
 
     @Override // alt + insert =Override
     public void hacerRuido() {
         System.out.println("grrrrrrr");
     }
+
     public void hacerRuido(Boolean molestar) {
         System.out.println("grita");
     }
@@ -27,5 +28,4 @@ public class Tigre extends Animal{
     public void comer() {
         System.out.println("carne");
     }
-    
 }
