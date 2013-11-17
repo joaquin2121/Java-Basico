@@ -17,6 +17,7 @@ public class ObjetoGranja {
         rojo.setNombre("Torpedo");
         System.out.println("codigo :"+ rojo.getCodigo()+"\nnombre :"+rojo.getNombre());
         System.out.println(rojo.tomarDietaDesayuno());
+       
     }
     
 }

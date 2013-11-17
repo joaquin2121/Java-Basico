@@ -15,7 +15,7 @@ public class Medicamento extends Producto {
     
     
     }
-      public void mostrarPosologia(){
+     public void mostrarPosologia(){
     
     
     }

@@ -22,13 +22,9 @@ public class Cliente {
 
      public static void main(String[] args) {
         
-      Medico  cliente = new Medico(null, null, null, null, null, 
-              null, 10, null, null, null, 2, 100);
-      
-     cliente.generarRceceta(null, null, 2, null, null);
-         
+          
      
-     Farmacia farmacia = new Farmacia(null, 101010, null, null, 101010, null, null);
+     Farmacia farmacia = new Farmacia();
      farmacia.solicitarReceta();
      farmacia.ventaMedicamentos();
      

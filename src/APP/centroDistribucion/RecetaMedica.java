@@ -8,9 +8,9 @@ public class RecetaMedica extends Producto {
     public String recetaMedica;
     public Date fechaVencimiento;
     public int cantidad;
-    public String nombreMedico;
+    public Medico nombreMedico;
 
-    public RecetaMedica(Date fechaEmicion, String recetaMedica, Date fechaVencimiento, int cantidad, String nombreMedico, String codigo, String descripcion, int unidadMedida, double precio) {
+    public RecetaMedica(Date fechaEmicion, String recetaMedica, Date fechaVencimiento, int cantidad, Medico nombreMedico, String codigo, String descripcion, int unidadMedida, double precio) {
         super(codigo, descripcion, unidadMedida, precio);
         this.fechaEmicion = fechaEmicion;
         this.recetaMedica = recetaMedica;
