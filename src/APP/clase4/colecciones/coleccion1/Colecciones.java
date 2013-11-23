@@ -14,7 +14,7 @@ public class Colecciones {
     public static void main(String[] args) {
         Colecciones.ejemploEstudiante();
         // Colecciones.ejemploLinkedList();
-        //Colecciones.ejemploS();
+        //Colecciones.ejemploSet();
         Colecciones.ejemploMap();
     }
 
@@ -41,7 +41,7 @@ public class Colecciones {
         }
     }
 
-    public static void ejemploS() {
+    public static void ejemploSet() {
         Estudiante e1 = new Estudiante("Alberto", "Zapata Zapata");
         Estudiante e2 = new Estudiante("Penjamin", "Ayasta Alaya");
         Estudiante e3 = new Estudiante("Carlos", "Lopez Lopez");

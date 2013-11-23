@@ -1,39 +1,30 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package APP.clase4.colecciones.coleccion1;
 
-/**
- *
- * @author alumno
- */
-public class Estudiante  implements Comparable<Estudiante>{
-   private String nombres;
-private String apellidos;
-private String direccion;
-private int codMatricula; 
+public class Estudiante implements Comparable<Estudiante> {
+
+    private String nombres;
+    private String apellidos;
+    private String direccion;
+    private int codMatricula;
 
     public Estudiante(String nombres, String apellidos) {
         this.nombres = nombres;
         this.apellidos = apellidos;
     }
 
-
     @Override
     public int compareTo(Estudiante o) {
-String apellidoExterno = o.getApellidos().toLowerCase();
-String apellidosLocal = this.getApellidos().toLowerCase();
-return apellidosLocal.compareTo(apellidoExterno);
+        String apellidoExterno = o.getApellidos().toLowerCase();
+        String apellidosLocal = this.getApellidos().toLowerCase();
+        return apellidosLocal.compareTo(apellidoExterno);
     }
 
-    
-    
-    public void printEstudiante(){
-        System.out.println(""+this.apellidos +" "+ this.nombres);
-    
-    
+    public void printEstudiante() {
+        System.out.println("" + this.apellidos + " " + this.nombres);
+
+
     }
+
     public String getNombres() {
         return nombres;
     }
@@ -65,5 +56,4 @@ return apellidosLocal.compareTo(apellidoExterno);
     public void setCodMatricula(int codMatricula) {
         this.codMatricula = codMatricula;
     }
-    
 }
