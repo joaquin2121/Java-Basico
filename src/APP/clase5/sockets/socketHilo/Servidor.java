@@ -1,37 +1,30 @@
-package APP.soc.socket;
+package APP.clase5.sockets.socketHilo;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Servidor2 {
+public class Servidor {
 
-    private int port,n1,n2;
+    private int port; /* el servidor recibe un puerto*/
 
-    public Servidor2(int port) {
+    public Servidor(int port) {
         this.port = port;
-
     }
+
     public void ejecutar() {
-
         try {
-            // Creamos un servidor de Socket
+// Creamos un servidor de Socket
             ServerSocket server = new ServerSocket(port);
-
-            System.out.println("Servidor iniciado...");
-
+            System.out.println("SERV HILO INICIADO...");
             while (true) {
                 System.out.println("Esperando ...");
                 Socket cliente = server.accept();
-
-                ServidorHilo ts = new ServidorHilo(cliente, n1, n2);
-
+                ServidorHilo ts = new ServidorHilo(cliente);
                 ts.start();
-
             }
         } catch (Exception e) {
             System.out.println("Error : " + e.getMessage());
             e.printStackTrace();
         }
     }
-
 }

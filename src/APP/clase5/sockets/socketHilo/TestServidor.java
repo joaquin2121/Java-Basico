@@ -1,4 +1,4 @@
-package APP.soc.socket;
+package APP.clase5.sockets.socketHilo;
 
 public class TestServidor {
 
@@ -8,10 +8,10 @@ public class TestServidor {
     }
 
     public static void Testserver() {
-        Servidor2 s2 = new Servidor2(999);
+        Servidor s = new Servidor(9999);
         
-        s2.ejecutar();
-
+        s.ejecutar();
     }
 
+    
 }

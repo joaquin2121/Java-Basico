@@ -1,5 +1,6 @@
 
-package APP.clase5.sockets.ejemplo1;
+package APP.clase5.sockets.socketHilo;
+
 
 public class testCliente {
 
@@ -9,7 +10,7 @@ public class testCliente {
     }
 
     public static void Testcliente() {
-        ClienteEjemplo1 c = new ClienteEjemplo1("localhost", 99);
+        Cliente c = new Cliente("localhost", 9999);
 
         c.doConectar();
     }

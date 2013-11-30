@@ -6,11 +6,11 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Servidor {
+public class ServidorEjemplo1 {
 
     private int port;
 
-    public Servidor(int port) {
+    public ServidorEjemplo1(int port) {
         this.port = port;
     }
 

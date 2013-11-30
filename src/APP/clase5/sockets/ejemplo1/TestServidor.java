@@ -8,7 +8,7 @@ public class TestServidor {
     }
 
     public static void Testserver() {
-        Servidor s = new Servidor(99);
+        ServidorEjemplo1 s = new ServidorEjemplo1(99);
         
         s.ejecutar();
     }

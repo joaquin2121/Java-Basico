@@ -1,4 +1,8 @@
-package APP.clase5.sockets.ejemplo1;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package APP.clase5.sockets.socketHilo;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -18,15 +22,23 @@ public class Cliente {
     public void doConectar() {
         try {
             Socket cliente = new Socket(host, port);
-// Crear los canales de lectura y escritura
             BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
             PrintWriter out = new PrintWriter(cliente.getOutputStream(), true);
-// COMUNICACION 1
+
             String msg = in.readLine();
             System.out.println(msg);
-// COMUNICACION 2
-            out.println("CLIENTE: David Rodríguez");
-// Cerrar canales
+            
+            out.println("HOLAAA");
+            out.println("r");
+            out.println(20);
+            out.println(10);
+            
+            msg = in.readLine();
+            System.out.println(msg);
+
+            msg = in.readLine();
+            System.out.println(msg);
+
             in.close();
             out.close();
             cliente.close();
